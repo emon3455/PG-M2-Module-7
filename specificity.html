@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Specificity </title>
+
+    <style>
+
+        #header-3{
+            color: red  !important;
+        }
+
+        .heading{
+            color: blueviolet;
+        }
+
+        h1{
+            color: #ffec7f;
+            transform: rotate(30deg);
+        }
+
+        #header-4{
+            width: 400px;
+        }
+
+        /* so most powerfull */
+        /* 
+        
+        1. !important
+        2. incline css
+        3. id selector
+        4. class selector
+        5. tag selector
+        
+        */
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="heading" id="header-1">heading - 1</h1>
+    <h1  class="heading" id="header-2">heading - 2</h1>
+    <h1 style="color: brown;" class="heading" id="header-3">heading - 3</h1>
+    <h1 class="heading" id="header-4">heading - 4</h1>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor architecto iste perferendis sunt ipsam modi alias iusto officia dolorem aliquam vitae aut sapiente eaque numquam, quae tempore, omnis laborum excepturi.
+    </p>
+    
+</body>
+
+</html>
